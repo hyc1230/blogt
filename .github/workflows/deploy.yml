@@ -1,0 +1,25 @@
+# 将 Hexo 站点文件放在仓库根目录下，本文件放在 .github/workflows 目录下即可
+name: Hexo to GH Pages
+on: 
+  push: 
+    branches: [master, main]
+permissions: 
+  contents: write
+jobs: 
+  deploy: 
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.6.0
+        with: 
+          node-version: '16'
+      - uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+      - run: npm install
+      - run: npx hexo g
+      - uses: peaceiris/actions-gh-pages@v3
+        with: 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
