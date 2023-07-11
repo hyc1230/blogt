@@ -56,11 +56,11 @@ reading_speed_cn: 300 # 每分钟中文阅读字数，用于计算预计阅读�
 reading_speed_en: 160 # 每分钟英文阅读单词数，用于计算预计阅读时间
 donate_qrcode_url: '' # 赞赏二维码地址，留空则不显示
 additional_content_after_post: '' # 文末追加信息，支持 HTML，留空则不显示
-article_header_style: default # 文章内小标题样式，可选值: default, 1, 2
+article_header_style: 1 # 文章内小标题样式，可选值: default, 1, 2
 
 # 背景
-page_background_url: '/assets/img/banner.jpg' # 页面背景地址，留空则不设页面背景
-page_background_dark_url: '/assets/img/banner.jpg' # 夜间模式页面背景地址，留空则跟随日间模式
+page_background_url: 'https://api.heyc.eu.org/img/sukasuka' # 页面背景地址，留空则不设页面背景
+page_background_dark_url: '' # 夜间模式页面背景地址，留空则跟随日间模式
 page_background_opacity: 1 # 页面背景不透明度，0 ~ 1的小数
 transparent_banner: true # Banner 透明化，如果设置了背景以后推荐开启该选项
 show_toolbar_mask: false # 顶栏遮罩，如背景图片影响了顶栏文字显示对比度建议开启
@@ -68,7 +68,7 @@ show_toolbar_mask: false # 顶栏遮罩，如背景图片影响了顶栏文字�
 # 浮动操作按钮
 fab_show_darkmode_button: false # 是否显示日夜间模式切换浮动操作按钮
 fab_show_settings_button: true # 是否显示博客设置浮动操作按钮
-fab_show_gotocomment_button: false # 是否显示跳转到评论区浮动操作按钮
+fab_show_gotocomment_button: true # 是否显示跳转到评论区浮动操作按钮
 
 # 平滑滚动
 smoothscroll: 1 # 可选值: disabled, 1, 1-pulse, 2, 3
@@ -86,25 +86,25 @@ lazyload_effect: fadeIn # 图片显示动画
 lazyload_loading_style: 1 # 图片加载的动画, 可选值 1 ~ 11, none
 
 # Pangu.js
-enable_pangu: false # 是否启用 Pangu.js 自动用空格分隔文章中的中英文字符
+enable_pangu: true # 是否启用 Pangu.js 自动用空格分隔文章中的中英文字符
 
 # 其他
 pjax_disabled: false # 是否禁用 Pjax
-enable_into_article_animation: false # 是否启用进入文章动画
+enable_into_article_animation: true # 是否启用进入文章动画
 enable_mobile_scale: false # 是否允许手机端缩放页面
 
 # 页脚
 footer_html: '' # 页脚 HTML
 
 # 数学公式
-math_render: '' # 数学公式渲染方案，留空则不渲染，可选值: mathjax3, mathjax2, katex
-mathjax_cdn_url: //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js # Mathjax 3 CDN 地址
-argon_mathjax_v2_cdn_url: //cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-AMS_HTML # Mathjax 2 CDN 地址
-katex_cdn_url: //cdn.jsdelivr.net/npm/katex@0.11.1/dist/ # Katex CDN 地址
+math_render: 'katex' # 数学公式渲染方案，留空则不渲染，可选值: mathjax3, mathjax2, katex
+mathjax_cdn_url: //unpkg.com/mathjax@3/es5/tex-chtml-full.js # Mathjax 3 CDN 地址
+argon_mathjax_v2_cdn_url: //unpkg.com/mathjax@2.7.5/MathJax.js?config=TeX-AMS_HTML # Mathjax 2 CDN 地址
+katex_cdn_url: //unpkg.com/katex@0.11.1/dist/ # Katex CDN 地址
 
 # 代码高亮
-enable_code_highlight: false # 是否启用 Highlight.js 代码高亮
-code_theme: vs2015 # 代码高亮主题
+enable_code_highlight: true # 是否启用 Highlight.js 代码高亮
+code_theme: github # 代码高亮主题
 
 # 脚本
 custom_html_head: '' # 页头脚本，HTML
@@ -130,7 +130,7 @@ giscus: # https://giscus.app/zh-CN
   lang: 'zh-CN'
 waline: # https://waline.js.org/guide/get-started.html
   enable: false # 是否启用 Waline 评论系统
-  server_url: '' 
+  server_url: 'https://comments.heyc.eu.org' 
 
 # 分析
 # 百度统计
