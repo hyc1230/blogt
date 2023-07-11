@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="article-header-style-default">
+<html class="article-header-style-1">
 <head>
 	
 	<title>归档 : 2023 - Hexo</title>
@@ -56,7 +56,7 @@
 					scale: 0.9
 				},
 			
-			pangu: "false",
+			pangu: "true",
 			
 				lazyload: {
 					threshold: 800,
@@ -309,7 +309,7 @@
 			top: 0;
 			bottom: 0;
 			z-index: -2;
-			background: url(/assets/img/banner.jpg);
+			background: url(https://api.heyc.eu.org/img/sukasuka);
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -319,29 +319,6 @@
 		html.darkmode #content:before{
 			filter: brightness(0.65);
 		}
-		
-			#content:after {
-				content: '';
-				display: block;
-				position: fixed;
-				left: 0;
-				right: 0;
-				top: 0;
-				bottom: 0;
-				z-index: -2;
-				background: url(/assets/img/banner.jpg);
-				background-position: center;
-				background-size: cover;
-				background-repeat: no-repeat;
-				opacity: 0;
-				transition: opacity .5s ease;
-			}
-			html.darkmode #content:after {
-				opacity: 1;
-			}
-			html.darkmode #content:before {
-				opacity: 0;
-			}
 		
 		
 			#banner, #banner .shape {
@@ -486,7 +463,7 @@
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
 									<a href="/archives">
-										<span class="site-state-item-count">1</span>
+										<span class="site-state-item-count">2</span>
 										<span class="site-state-item-name">文章</span>
 									</a>
 								</div>
@@ -584,7 +561,64 @@
 		
 		
 				
-	<article class="post card bg-white shadow-sm border-0 ">
+	<article class="post card bg-white shadow-sm border-0 post-preview">
+	<header class="post-header text-center">
+		
+		<a class="post-title" href="/2023/07/11/test/">test</a>
+		<div class="post-meta">
+			
+						
+						<div class="post-meta-detail post-meta-detail-time">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+							<time title="发布于 2023-7-11 12:27:24 | 编辑于 2023-7-11 5:32:42">2023-7-11 12:27
+							</time>
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-words">
+							<i class="fa fa-book" aria-hidden="true"></i>
+							<span id="busuanzi_container_page_pv">
+								阅读<span id="busuanzi_value_page_pv"></span>次
+							</span>
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-words">
+							<i class="fa fa-file-word-o" aria-hidden="true"></i>
+							249 字
+						</div>
+					
+						
+							<div class="post-meta-devide">|</div>
+						
+						<div class="post-meta-detail post-meta-detail-readingtime">
+							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
+							1 分钟
+						</div>
+					
+		</div>
+		
+	</header>
+
+	<div class="post-content">
+		
+			
+				这是一个测试。
+$1 + 2 &#x3D; 3$
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546#include &lt;string&gt;#include &lt;vector&gt;using namespace std;#...
+			
+		
+	</div>
+
+	
+</article>
+
+
+	<article class="post card bg-white shadow-sm border-0 post-preview">
 	<header class="post-header text-center">
 		
 		<a class="post-title" href="/2023/07/11/hello-world/">Hello World</a>
@@ -593,7 +627,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2023-7-11 4:06:51 | 编辑于 2023-7-11 4:06:51">2023-7-11 4:06
+							<time title="发布于 2023-7-11 5:32:42 | 编辑于 2023-7-11 5:32:42">2023-7-11 5:32
 							</time>
 						</div>
 					
@@ -663,6 +697,28 @@
 		
 		
 		
+			<link rel="stylesheet" href="//unpkg.com/katex@0.11.1/dist/katex.min.css">
+			<script src="//unpkg.com/katex@0.11.1/dist/katex.min.js"></script>
+			<script src="//unpkg.com/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body,{
+						delimiters: [
+							{left: "$$", right: "$$", display: true},
+							{left: "$", right: "$", display: false},
+							{left: "\\(", right: "\\)", display: false}
+						]
+					});
+				});
+			</script>
+		
+
+		
+			<script>
+				var argonEnableCodeHighlight = true;
+			</script>
+			
+<link rel="stylesheet" href="/assets/vendor/highlight/styles/github.css">
 
 		
 

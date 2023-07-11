@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="article-header-style-default">
+<html class="article-header-style-1">
 <head>
 	
 	<title>Hello World - Hexo</title>
@@ -15,8 +15,8 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-07-11T04:06:51.653Z">
-<meta property="article:modified_time" content="2023-07-11T04:06:51.653Z">
+<meta property="article:published_time" content="2023-07-11T05:32:42.093Z">
+<meta property="article:modified_time" content="2023-07-11T05:32:42.093Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -60,7 +60,7 @@
 					scale: 0.9
 				},
 			
-			pangu: "false",
+			pangu: "true",
 			
 				lazyload: {
 					threshold: 800,
@@ -313,7 +313,7 @@
 			top: 0;
 			bottom: 0;
 			z-index: -2;
-			background: url(/assets/img/banner.jpg);
+			background: url(https://api.heyc.eu.org/img/sukasuka);
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -323,29 +323,6 @@
 		html.darkmode #content:before{
 			filter: brightness(0.65);
 		}
-		
-			#content:after {
-				content: '';
-				display: block;
-				position: fixed;
-				left: 0;
-				right: 0;
-				top: 0;
-				bottom: 0;
-				z-index: -2;
-				background: url(/assets/img/banner.jpg);
-				background-position: center;
-				background-size: cover;
-				background-repeat: no-repeat;
-				opacity: 0;
-				transition: opacity .5s ease;
-			}
-			html.darkmode #content:after {
-				opacity: 1;
-			}
-			html.darkmode #content:before {
-				opacity: 0;
-			}
 		
 		
 			#banner, #banner .shape {
@@ -502,7 +479,7 @@
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
 									<a href="/archives">
-										<span class="site-state-item-count">1</span>
+										<span class="site-state-item-count">2</span>
 										<span class="site-state-item-name">文章</span>
 									</a>
 								</div>
@@ -599,7 +576,7 @@
 		
 		
 			
-	<article class="post post-full card bg-white shadow-sm border-0 ">
+	<article class="post post-full card bg-white shadow-sm border-0 post-preview">
 	<header class="post-header text-center">
 		
 		<a class="post-title" href="/2023/07/11/hello-world/">Hello World</a>
@@ -608,7 +585,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2023-7-11 4:06:51 | 编辑于 2023-7-11 4:06:51">2023-7-11 4:06
+							<time title="发布于 2023-7-11 5:32:42 | 编辑于 2023-7-11 5:32:42">2023-7-11 5:32
 							</time>
 						</div>
 					
@@ -773,7 +750,7 @@
 
 
 
-
+<div class="post-navigation card shadow-sm"><div class="post-navigation-item post-navigation-pre"><span class="page-navigation-extra-text"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>上一篇</span><a href="/2023/07/11/test/" rel="prev"> test</a></div><div class="post-navigation-item post-navigation-next"></div></div>
 
 
 
@@ -799,6 +776,28 @@
 		
 		
 		
+			<link rel="stylesheet" href="//unpkg.com/katex@0.11.1/dist/katex.min.css">
+			<script src="//unpkg.com/katex@0.11.1/dist/katex.min.js"></script>
+			<script src="//unpkg.com/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body,{
+						delimiters: [
+							{left: "$$", right: "$$", display: true},
+							{left: "$", right: "$", display: false},
+							{left: "\\(", right: "\\)", display: false}
+						]
+					});
+				});
+			</script>
+		
+
+		
+			<script>
+				var argonEnableCodeHighlight = true;
+			</script>
+			
+<link rel="stylesheet" href="/assets/vendor/highlight/styles/github.css">
 
 		
 
